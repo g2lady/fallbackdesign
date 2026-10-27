@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g2lady-fallbackdesign"
+version = "0.1.0"
+description = "按成本从低到高排模型链，并给出每级的触发阈值"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "g2lady" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://g2lady.github.io"
+Repository = "https://github.com/g2lady/fallbackdesign"
+Issues = "https://github.com/g2lady/fallbackdesign/issues"
+
+[project.scripts]
+fallbackdesign = "fallbackdesign:main"
+
+[tool.setuptools]
+py-modules = ["fallbackdesign"]
